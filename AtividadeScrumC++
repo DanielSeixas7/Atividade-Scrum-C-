@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main (){
+int altura, base, area, estudante, idoso, inteira, pessoa_area, mult, div,subtração,valor_estudante,valor_inteira,soma,patrocinadores,imposto_prefeitura,valor_equipe,valor_liquido;
+cout<<"Digite o valor da base: "<<endl;
+cin>>base;
+cout<<"Digite o valor da altura: "<<endl;
+cin>>altura;
+area = altura*base;
+cout<<"Área do Local: "<<area<<endl;
+pessoa_area = 7*area/2;
+cout<<"Pessoa por Área: "<<pessoa_area<<endl<<endl;
+idoso = 0.05*pessoa_area;
+cout<<"Idosos: "<<idoso<<endl;
+estudante = 0.2*pessoa_area;
+cout<<"Estudante: "<<estudante<<endl;
+inteira = pessoa_area-estudante-idoso;
+cout<<"Inteira: "<<inteira<<endl<<endl;
+valor_estudante = 250 * estudante;
+cout<<"Valor Arrecadado Estudante: R$"<<valor_estudante<<endl;
+valor_inteira = 500 * inteira;
+cout<<"Valor Arrecadado das Inteiras: R$"<<valor_inteira<<endl;
+soma = valor_estudante+valor_inteira;
+cout<<"Valor do Ingresso Arrecadado: R$"<<soma<<endl<<endl;
+patrocinadores = soma*0.5;
+cout<<"Entradas de Patrocinadores: R$"<<patrocinadores<<endl;
+imposto_prefeitura = (soma+patrocinadores)*0.15;
+cout<<"Imposto à pagar: R$ "<<imposto_prefeitura<<endl;
+valor_equipe = (patrocinadores+soma-imposto_prefeitura)*0.4;
+cout<<"Valor Pago a Equipe: R$ "<<valor_equipe<<endl;
+valor_liquido = soma+patrocinadores-imposto_prefeitura-valor_equipe;
+cout<<"Valor Líquido Arrecadado: R$ "<<valor_liquido<<endl;
+return 0;
+}
